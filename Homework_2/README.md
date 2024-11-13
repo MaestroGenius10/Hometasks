@@ -19,7 +19,7 @@
 
 #### Пример использования
 print(common_price(5, 50, 10, 3))
-# Вывод: Общая цена составляет 1 рубль и 65 копеек за 3 товаров
+Вывод: Общая цена составляет 1 рубль и 65 копеек за 3 товаров
 
 
 
@@ -35,7 +35,7 @@ print(common_price(5, 50, 10, 3))
 
 #### Пример использования
 print(triangle(3, 4, 5))
-# Вывод: 6.0
+Вывод: 6.0
 
 
 
@@ -50,7 +50,7 @@ print(triangle(3, 4, 5))
 
 #### Пример использования
 print(longest_word("This is a sample sentence where the longest word is in the middle!"))
-# Вывод: "sentence"
+Вывод: "sentence"
 
 
 
@@ -65,7 +65,7 @@ print(longest_word("This is a sample sentence where the longest word is in the m
 
 #### Пример использования
 print(uniques("abc cde def"))
-# Вывод: "abcdef"
+Вывод: "abcdef"
 
 
 
@@ -80,6 +80,6 @@ print(uniques("abc cde def"))
 
 #### Пример использования
 print(count_string_capitalization("Hello World!"))
-# Вывод: В строке 'Hello World!' 2 большие и 8 маленькие буквы
+Вывод: В строке 'Hello World!' 2 большие и 8 маленькие буквы
 
 
