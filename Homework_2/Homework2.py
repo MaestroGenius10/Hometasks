@@ -20,6 +20,7 @@ def common_price(m, n, s, l):
     v = round(kop_total_price-100*a)
 
     return "Общая цена составляет " + str(a) + " рублей и " + str(v) + " копеек за " + str(l) + " товаров"
+    # Решение отличное, не проходит один тест на задачу со *, стоит использовать модуль Decimal, или альт.решения - посмотрим в эталонах
 
 # В функцию передаются аргументы: a, b, c - длины сторон треугольника.
 # Требуется: проверить, может ли существовать треугольник с такими длинами сторон.
@@ -37,7 +38,7 @@ def triangle(a, b, c):
         square = round(math.sqrt(p*(p-a)*(p-b)*(p-c)),4)
         return square
     return existment
-
+    # Отличное решение
 # Найти самое длинное слово в введенном предложении.
 # Учтите что в предложении могут быть знаки препинания.
 # Пример: если передано "This is a sample sentence where the longest word is in the middle!",
@@ -55,7 +56,7 @@ def longest_word(sentence):
     if max_string == '':
         return False
     return max_string
-
+    # Верное решение, можно использовать string.punktuation или более короткие методы для исключения пунктуации
 # Передается строка. Требуется удалить из нее повторяющиеся символы и все пробелы.
 # Например, если было передано "abc cde def", то должно быть выведено "abcdef".
 def uniques(repeating_string):
@@ -65,7 +66,7 @@ def uniques(repeating_string):
     uniq_set = set(fixed_str)
     uniq_str = ''.join(sorted(uniq_set, key=fixed_str.index))
     return uniq_str
-
+    # Верное решение
 # Посчитать количество строчных (маленьких) и прописных (больших) букв в введенной строке.
 # Проверка рассчитана только на английские буквы.
 def count_string_capitalization(mixed_string):
@@ -76,7 +77,7 @@ def count_string_capitalization(mixed_string):
     for i in mixed_string:
         if i.islower():
             little += 1
-        elif i.upper():
+        elif i.upper(): # Тут ошибка - isupper
             big += 1
         else:
             continue
